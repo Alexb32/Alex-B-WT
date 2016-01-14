@@ -1,0 +1,67 @@
+//Question game 
+//Alex Borland
+
+#include <iostream>
+int turnBack();
+using namespace std;
+
+char answer1;
+char answer2;
+char answer3;
+char answer4;
+char answer5;
+char answer6;
+
+int main()
+{
+	
+	cout << "You are in the middle of nowhere, should you walk left or right? \n(Please answer R or L)\n";
+	cin >> answer1;
+	if (answer1 == 'L')
+	{
+		turnBack();
+	}
+	//Level 2-1
+	if (answer1 == 'R')
+	{
+		cout << "\nYou have been walking for about three hours now and you have still not come across anything. \n Would you like to turn around or keep going?\n(Please answer T or K)\n";
+		
+		//Level 2-2
+		cin >> answer3;
+		if (answer3 == 'T')
+		{
+			turnBack();
+		}
+		else if (answer3 == 'K')
+		{
+			cout << "\nAfter another five hours of walking you come across a homeless dude and he asks you if you \nwant some shrooms? Do you accept or decline?(Please answer A or D)\n";
+			cin >> answer6;
+		}
+	}
+	system("pause");
+	return 0;
+	
+}
+int turnBack()
+{
+	
+		cout << "\nCongratulations you have come across a town that seems to have a working telephone,\nbut you only have enough money for one call. Who do you call, the police, or your mom?\n(Please answer P or M)\n";
+		cin >> answer2;
+
+		//Level 1-2
+		if (answer2 == 'M')
+		{
+			cout << "\nUnfortunatly your mother has not picked up the, so you leave her a message saying\n that you don't know where you are, and how she should go and look for you. You decide\n to look around the town to find out where you are. You come across a bank, \nand an abandoned house, which one do you enter?(Please answer B or H)\n ";
+			cin >> answer4;
+		}
+
+		//Level 1-2
+		else if (answer2 == 'P')
+		{
+			cout << "\nYou called the police and they said to sit tight while they come to pick you up.\nWhen they arrive you tell them what happend and they give you the choice of leaving and find things out on your own\n or to stay and have to sit in a cell while they find out who you are. Do you choose the cell or to leave?(Please answer C or L)\n";
+			cin >> answer5;
+		}
+		system("pause");
+		return 0;
+
+}
