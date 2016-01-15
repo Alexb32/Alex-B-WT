@@ -1,0 +1,33 @@
+/*
+PROGRAM NAME: Fibonacci
+PROGRAM PURPOSE: Create fibonacci sequence in c++
+DATE WRITTEN: 1/15/16
+WRITTEN BY: Alex Borland
+*/
+
+#include <iostream>
+using namespace std;
+
+int last = 1;
+int next = 0;
+int sum;
+int input;
+char restart;
+
+int main()
+{
+	cout << "Please enter a number: ";
+	cin >> input;
+	cout << endl << next << endl;
+	
+	while(last < input)
+	{
+		cout << last << endl;
+		sum = next + last;
+		next = last;
+		last = sum;	
+	}
+	
+	return 0;
+	system("pause");
+}
