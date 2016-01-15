@@ -35,39 +35,48 @@ int main()
 	//Level 2-1
 	if (answer1 == "Right" || answer1 == "right")
 	{
-		cout << "\nYou have been walking for about three hours now and you have still not come across anything. \n Would you like to turn around or continue?\n";
+		cout << "\nYou have been walking for about three hours now and you have still not come \nacross anything. Would you like to backtrack or continue?\n";
 		
 		//Level 2-2
 		cin >> answer3;
-		if (answer3 == "Turn around" || answer3 == "turn around")
+		if (answer3 == "Backtrack" || answer3 == "backtrack")
 		{
 			turnBack();
 		}
 		//Level 2-2
 		else if (answer3 == "Continue" || answer3 == "continue")
 		{
-			cout << "\nAfter another five hours of walking you come across a homeless dude and he asks you if you \nwant some shrooms? Do you accept or decline?\n";
+			cout << "\nAfter another five hours of walking you come across a homeless dude and he asks you if you want some shrooms? Do you accept or decline?\n";
 			cin >> answer6;
 			if (answer6 == "Accept" || answer6 == "accept")
 			{
-				cout << "\nHoly buckets, that is some crazy shit. While you are tripping ballz you see a small \nfigure that looks a lot like a person. You are pretty sure that\n it is real and not a hallucination, do you go towards\n the person and risk getting more lost, or keep going the way you were?(Please answer Person or continue)\n"
+				cout << "\nHoly buckets, that is some crazy shit. While you are tripping ballz you see \na small figure that looks a lot like a person. You are pretty sure that it is \nreal and not a hallucination, do you go towards the person and risk getting \nmore lost, or keep going the way you were?\n(Please answer towards or continue)\n";
+				cin >> answer8;
+				if (answer8 == "Towards" || answer8 == "towards")
+				{
+					cout << "\nAfter walking for what seemed like a years, you didn't come across anything, and \nthe drugs had seemed to have died off so you decide to either lay down wherever \nyou are and go to sleep, or to take some more shrooms and have a good time.\n (Please answer sleep or shrooms)";
+					cin >> answer9;
+				}
+				if (answer8 == "Continue" || answer8 == "continue")
+				{
+					cout << "\nAstonishly you come across a couple in a car fighting about what color their child's room should be. You knock on the window and ask them if you could catch a ride they respond saying yes and ask you where you would like to go. You can go to the nearest town or you can tell them to take you back to where you woke up.\n(Please answer town or back)";
+				}
 			}
 		}
 	}
-	system("pause");
-	return 0;
+	
 	
 }
 int turnBack()
 {
 	
-		cout << "\nCongratulations you have come across a town that seems to have a working telephone,\nbut you only have enough money for one call. Who do you call, the police, or your mom?\n";
+		cout << "\nCongratulations you have come across a town that seems to have a working \ntelephone, but you only have enough money for one call. Who do you call, \nthe police, or your mother?\n";
 		cin >> answer2;
 
-		if (answer2 == "Mom" || answer2 == "mom")
+		if (answer2 == "Mother" || answer2 == "mother")
 		{
 			//Level 1-2
-			cout << "\nUnfortunatly your mother has not picked up the, so you leave her a message saying\n that you don't know where you are, and how she should go and look for you. You decide\n to look around the town to find out where you are. You come across a bank, \nand an abandoned house, which one do you enter?\n ";
+			cout << "\nUnfortunatly your mother has not picked up the, so you leave her a message \nsaying that you don't know where you are, and how she should go and look for \nyou. You decide to look around the town to find out where you are. You come \nacross a bank, and an abandoned house, which one do you enter?\n ";
 			cin >> answer4;
 		}
 
@@ -86,13 +95,13 @@ int turnBack()
 					//Level 1-4
 					main();
 				}
-				else if (answer7 == "No" || answer7 == "no");
+				if (answer7 == "No" || answer7 == "no");
 				{
 					exit(0);
 				}
 			}
 		}
-		system("pause");
+		exit(0);
 		return 0;
 
 }
