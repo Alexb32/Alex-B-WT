@@ -1,0 +1,30 @@
+/*
+PROGRAM NAME: distanceConvert.cpp
+PROGRAM PURPOSE: convert furlongs to yards
+DATE WRITTEN: 2/11/16
+WRITTEN BY: Alex Borland
+*/
+
+#include <iostream>
+using namespace std;
+
+int FtoY(int);
+
+int main()
+{
+	int furlongs;
+
+	cout << "Please enter furlongs: ";
+	cin >> furlongs;
+	 
+	int yards = FtoY(furlongs);
+	cout << furlongs << " furlongs in yards is: " << yards << endl;
+
+	system("pause");
+	return 0;
+}
+
+int FtoY(int furlongs)
+{
+	return (furlongs * 220);
+}
