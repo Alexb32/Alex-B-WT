@@ -1,0 +1,29 @@
+/*
+PROGRAM NAME: nameAndAddress.cpp	
+PROGRAM PURPOSE: display the name and address
+DATE WRITTEN: 2/11/16
+WRITTEN BY: Alex Borland
+*/
+
+#include <iostream>
+#include <string>
+#include <limits>
+#include<cctype>
+using namespace std;
+
+int main()
+{
+	string name;
+	string address;
+
+	cout << "Please enter your name: \n";
+	getline(cin, name);
+
+	cout << "Now enter your address: \n";
+	getline(cin, address);
+	
+	cout << "Thanks. Your name and address is: \n" << name << endl << address << endl;
+
+	system("pause");
+	return 0;
+}
